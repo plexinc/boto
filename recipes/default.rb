@@ -1,3 +1,4 @@
+#
 # Cookbook Name:: boto
 # Recipe:: default
 #
@@ -15,5 +16,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe "boto::install"
-include_recipe "boto::configure"
+include_recipe 'boto::install'
+include_recipe 'boto::configure'
