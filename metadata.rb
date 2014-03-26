@@ -1,3 +1,4 @@
+name             'boto'
 maintainer       "Chris Fordham"
 maintainer_email "chris@xhost.com.au"
 license          "Apache 2.0"
