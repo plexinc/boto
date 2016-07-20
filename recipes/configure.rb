@@ -15,6 +15,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-template "/etc/boto.cfg" do
-  source "boto.cfg.erb"
+unless node['boto']['aws_access_key_id'].nil?
+  template "/etc/boto.cfg" do
+    source "boto.cfg.erb"
+  end
 end
