@@ -15,6 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe "python"
-
-python_pip "boto"
+python_package "boto" do
+  action :upgrade
+  version node['boto']['version'] if node['boto']['version']
+end
